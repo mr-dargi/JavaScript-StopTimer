@@ -1,0 +1,59 @@
+@font-face {
+    font-family: item-regular;
+    src: url("../fonts/Itim-Regular.ttf");
+}
+
+body {
+    background-color: rgb(61, 152, 255)!important;
+}
+
+.timer-template {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 45vw;
+    height: 50vh;
+    font-family: item-regular;
+    font-size: x-large;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: white;
+}
+
+.timer-template div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+#timer {
+    width: 43vw;
+    margin: 1vw;
+    font-size: 4vw;
+    border: 1px solid rgb(243, 243, 243);
+    box-shadow: 1px 1px 10px 3px rgb(176, 213, 255);
+    color: rgb(61, 152, 255);
+    text-align: center;
+}
+
+.btn-style {
+    width: 8vw;
+    height: 8vh;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 2vw;
+    text-shadow: 1px 1px 10px black;
+}
+
+#stopTimer {
+    background-color: rgb(235, 0, 0);
+}
+
+#startTimer {
+    background-color: rgb(12, 146, 0);
+}
+
+#resetTimer {
+    background-color: rgb(241, 241, 0);
+}
