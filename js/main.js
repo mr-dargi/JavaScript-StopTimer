@@ -1,4 +1,14 @@
-let [hours, minutes, seconds, miliseconds] = 0;
+let 
+hours = 0, 
+minutes = 0, 
+seconds = 0, 
+miliseconds = 0;
+
+let int = null;
+
+const timer = document.getElementById("timer");
+const start = document.getElementById("startTimer");
+const stop = document.getElementById("stopTimer");
 
 
 const startTimer = () => {
@@ -18,11 +28,23 @@ const startTimer = () => {
             }
         }
     }
+
+    timer.innerHTML = `${hours}:${minutes}:${seconds}:${miliseconds}`
 }
 
-const timerInterval = setInterval(startTimer(),1);
+const myInterval = () => {
+    if(int !== null) {
+        debugger
+        clearInterval(int);
+    }
 
-document.getElementById("startTimer").addEventListener("click", timerInterval());
-document.getElementById("stopTimer").addEventListener("click", () => {
-    clearInterval()
+    int = setInterval(startTimer, 1);
+    console.log(int);
+}
+
+start.addEventListener("click", myInterval);
+stop.addEventListener("click", () => {
+    debugger
+    clearInterval(int);
+    console.log(int);
 })
