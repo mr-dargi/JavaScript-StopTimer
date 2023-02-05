@@ -10,12 +10,11 @@
 <div>
 <h1>Monitor View</h1>
 <img src="./monitorView.png" alt="MonitorView"
-style="width: 100%; height: 250px;">
+style="width: 100%; height: 300px;">
 </div>
 <div>
 <h1>Mobile View</h1>
-<img src="./mobileView.png" alt="mobileView" style="width: 100%; height: 400px;
- display: flex; justify-content: centr;">
+<img src="./mobileView.png" alt="mobileView" style="width: 50%; height: 450px;">
 </div>
 
 ## My process
