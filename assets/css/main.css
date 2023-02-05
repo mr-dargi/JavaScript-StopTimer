@@ -10,7 +10,7 @@ body {
 .timer-template {
     position: absolute;
     top: 25vh;
-    left: 25vw;
+    left: 26vw;
     width: 45vw;
     height: 50vh;
     font-family: item-regular;
@@ -20,10 +20,6 @@ body {
 }
 
 .timer-template div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     height: 20vh;
 }
 
@@ -56,4 +52,17 @@ body {
 
 #resetTimer {
     background-color: rgb(241, 241, 0);
+}
+
+@media only screen and (min-width: 992px) {
+    .timer-template div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* #timer {
+
+    } */
+    
 }
